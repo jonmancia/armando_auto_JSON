@@ -1,0 +1,22 @@
+[{
+  "id": "1",
+  "type": "Truck",
+  "make": "Toyota",
+  "model": "Tundra",
+  "price": "255"
+},
+{
+  "id": "2",
+  "type": "Sedan",
+  "make": "Toyota",
+  "model": "Corolla",
+  "price": "235"
+},
+{
+  "id": "3",
+  "type": "Van",
+  "make": "Honda",
+  "model": "Oddesy",
+  "price": "245"
+}
+]

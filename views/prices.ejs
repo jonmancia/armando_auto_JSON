@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Our prices</title>
+	<!-- Stylesheet Below -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+</head>
+<body class="container-fluid">
+<header>
+	<nav>
+		<div class="nav-wrapper blue">
+		<div class="brand-logo">Armando Automotive Transport</div>
+			<ul class="right">
+				<li><a href="/">Home</a></li>
+				<li class="active"><a href="#">Our prices</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>		
+
+<section class="center-align valign">
+	<div class="center-align">
+		<div class="col m6 center-align valign">
+			<div class="card center-align valign">
+				<div class="card-title center-align">Vehicles</div>
+				<table class="center-align">
+					<thead class="center-align">
+						<th class="center-align">ID</th>
+						<th class="center-align">Price</th>
+						<th class="center-align">Make</th>
+						<th class="center-align">Model</th>
+					</thead>
+
+					<tbody>
+						<% prices.forEach( function(prices){ %>
+						<tr class="center-align">
+							<td class="center-align"><a href=<%= '/prices/' + prices.id %>>Show</a></td>
+							<td class="center-align">$<%= prices.price %></td>
+							<td class="center-align"><%= prices.make %></td>
+							<td class="center-align"><%= prices.model %></td>
+						</tr>
+							
+						<% }); %>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+</body>
+</html>
